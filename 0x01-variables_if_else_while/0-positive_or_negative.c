@@ -3,9 +3,7 @@
 #include<stdio.h>
 /**
  * main - Lanzador
- * 
- * Return: Always 0
- * 
+ * Return: Always 0 
  */
 
 int main(void)
