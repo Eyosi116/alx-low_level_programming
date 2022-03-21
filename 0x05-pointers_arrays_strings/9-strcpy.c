@@ -1,40 +1,21 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * string_length - finds the length of a string.
- * Return: length of c.
- * @pointer: pointer.
- */
-int string_length(char *pointer)
-{
-	int c = 0;
-
-	while (*(pointer + c) != '\0')
-	{
-		c++;
-	}
-	return (c);
-}
-/**
- * *_strcpy - copies the string pointed to by src.
- *
- * @dest: pointer to the buffer.
- * @src: pointer to the source string.
- * Return: char
+ * _strcpy - copies  src to  dest.
+ * @dest:char
+ * @src:char
+ * Return:char
  */
 char *_strcpy(char *dest, char *src)
 {
-	int n;
-	int i;
+int i;
 
-	n = string_length(src);
-	for (i = 0; i < n && src[i] != '\0'; i++)
+i = 0;
+	while (src[i])
 	{
 		dest[i] = src[i];
+		i++;
 	}
-	for (; i < n; i++)
-	{
-		dest[i] = '\0';
-	}
-	return (dest);
+dest[i] = '\0';
+return (dest);
 }
